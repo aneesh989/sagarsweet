@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <title>HOME</title>
+  </head>
+  <body>
+    <div class="flex bg-gray-200 justify-center space-x-10">
+      <a href="tel:+923322085124" class="hover:underline my-2  hover:text-blue-400 fa fa-phone">03322085124</a>
+      <a class="hover:underline my-2   hover:text-green-600 h-10 fa fa-whatsapp" href="https://wa.me/+923322085124" target="_blank">Whatsapp</a>
+    </div>
+    <!-- Header starts -->
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center ">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <img class="h-20 inline" src="images/logo.png" />
+        </span>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul
+        class="md:flex md:items-center md:z-auto md:static absolute z-[+50] bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a href="index.html" class="text-xl hover:text-amber-500 duration-500"
+            >HOME</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0 z-50 ">
+          <div class="relative inline-block text-left ">
+            <div>
+              <button
+                type="button"
+                onclick="dropdownHandler()"
+                class="text-xl inline-flex justify-center w-full  rounded-md border border-gray-300 shadow-sm px-4  bg-white  font-medium text-gray-700 hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-700 "
+                id="menuButton"
+              >
+                <a href="#">Shop</a>
+                <!-- Heroicon name: solid/chevron-down -->
+                <svg
+                  class=" ml-20 h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              id="myDropdown"
+              class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg   bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu"
+              name="open"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <div class="py-1 " role="none">
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <a
+                  href="sweet.html"
+                  class="text-gray-700 block px-4 py-2 text-lg hover:bg-amber-500 duration-500"
+                  role="menuitem"
+                
+                  id="menu-item-0"
+                  >SWEET</a
+                >
+                <a
+                  href="fast Food.html"
+                  class="text-gray-700 block px-4 py-2 text-lg hover:bg-amber-500  duration-500"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  >Fast Food</a
+                >
+                  </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="about.html" class="text-xl hover:text-amber-500 duration-500"
+            >ABOUT</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="contact.html"
+            class="text-xl hover:text-amber-500 duration-500"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Header starts -->
+    
+    <h1 class="text-4xl text-amber-500 font-bold py-2 m-2 text-center">sweet</h1>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/gulabJamun.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                gulabJamun
+              </h2>
+              <p class="mt-1">from Rs 247</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/ghewar.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Ghewar
+              </h2>
+              <p class="mt-1">from Rs 200</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/paira.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                paira
+              </h2>
+              <p class="mt-1">from Rs 200</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/kaju katri.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Kaju Katli
+              </h2>
+              <p class="mt-1">from Rs 247</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/Jalebi.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Jalebi
+              </h2>
+              <p class="mt-1">from Rs 250</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/rasgula.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                rasgula
+              </h2>
+              <p class="mt-1">from Rs 247</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="/images/Moti Choor Laddu.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Moti Choor Laddu
+              </h2>
+              <p class="mt-1">from Rs 247</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/Baison Laddu.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Baison Laddu
+              </h2>
+              <p class="mt-1">from Rs 247</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/Burfee.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Burfee
+              </h2>
+              <p class="mt-1">from Rs 257</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/Chocolate Burfee.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Chocolate Burfee
+              </h2>
+              <p class="mt-1">from Rs 272</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="/images/Pan Paira Burfee.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Pan Paira Burfee
+              </h2>
+              <p class="mt-1">from Rs 257</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/Pista Roll.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY: Sweet
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Pista Roll
+              </h2>
+              <p class="mt-1">from Rs 315</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="p-4 sm:p-6 dark:bg-gray-900 mx-4 bg-">
+      <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="index.html" class="flex items-center ">
+                  <img src="images/logo.png" class="mr-3 " alt="Logo">
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">quick</h2>
+                  <ul class="text-gray-600 dark:text-gray-400">
+                      <li class="mb-4">
+                          <a href="shop.html" class="hover:underline">SHOP</a>
+                      </li>
+                      <li>
+                          <a href="contact.html" class="hover:underline">Contact with us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-gray-600 dark:text-gray-400">
+                      <li class="mb-4">
+                          <a href="https://www.facebook.com/rude.baxha.7" class="hover:underline ">Facebook</a>
+                      </li>
+                      <li>
+                          <a href="tel:+923322085124" class="hover:underline fa fa-phone">  Phone Number</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-gray-600 dark:text-gray-400">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="https://www.instagram.com/aneesh_acharia/?hl=en" ><p
+        class="text-sm text-amber-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+      >
+        © develope by aneesh acharia
+      </p></a>
+      <div>
+      <h1 class="text-center text-2xl font-bold text-amber-600">Sagar Sweet Mart Mithi</h1>
+      <div
+      class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-10"
+      >
+      <a class="fa fa-facebook-square h-10 " href="https://www.facebook.com/rude.baxha.7"></a>
+      <a  class="hover:underline fa fa-phone h-10 " href="tel:+923322085124"></a>
+      <a class="hover:underline fa fa-whatsapp h-10 " href="https://wa.me/+923322085124" target="_blank"></a>
+    </div>
+      </div>
+      </div>
+    </footer>
+    <script src="shop.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
